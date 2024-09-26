@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    /*Réecriture des styles par défauts du navigateur*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #f9f9f9;
+    padding: 0;
+    color: rgba(0,123,255,255);
+}
+
+header{
+    background-color: rgba(0,123,255,255);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover{
+    transition: all 0.2s ease-in-out;
+    font-weight: 900;
+    color: black;
+    text-shadow: 0 0 8px var(--light-color);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empile le titre et le menu verticalement */
+        text-align: center; /* Centre le contenu */
+    }
+
+    nav ul {
+        flex-direction: column; /* Met les éléments du menu en colonne */
+    }
+}
+
+.about h2{
+    margin-bottom: 10px;
+}
+
+.about {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.projects h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+.projects{
+    display:flex;
+    flex-direction: column;
+    background-color: #e4dfdf;
+    margin: 0 15px 0 15px;
+    flex-grow: 1;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+
+.project h3{
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+.project p {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project{
+    margin: 10px;
+    padding-bottom: 65px;
+    margin-bottom: 35px;
+    background-color: #f0f0f0;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+
+    background-color: #333;  
+    color: white;  
+    text-align: center;  
+    padding: 10px 0;  
+    position: fixed;  
+    bottom: 0;  
+    width: 100%;
+}
+
+footer p {
+    margin: 0px;
+}
+
+
+
